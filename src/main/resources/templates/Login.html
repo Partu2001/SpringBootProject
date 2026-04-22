@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Login</title>
+</head>
+<body>
+
+<h1>Student Login</h1>
+<h2 th:text="${error}" style="color:red"></h2>
+
+<form action="/studentportal/Login" method="post">
+Username : <input type="text" placeholder="Enter Username" name="username" required> <br> <br>
+Password : <input type="password" placeholder="Enter Password" name="password" required> <br> <br>
+<input type="submit">
+</form>
+</body>
+</html>

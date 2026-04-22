@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Update Student</title>
+</head>
+<body>
+
+<h1>Update Student Info</h1>
+
+<form action="/studentportal/updatestudent" method="post" th:object="${update}">
+
+    Id : <input type="hidden" th:field="*{id}">
+
+    Name : <input type="text" placeholder="Enter Name" th:field="*{name}" required> 
+    <br><br>
+
+    Roll No : <input type="number" placeholder="Enter Roll No" th:field="*{rollno}" required> 
+    <br><br>
+
+    Gender : 
+    <input type="radio" th:field="*{gender}" value="male"> Male
+    <input type="radio" th:field="*{gender}" value="female"> Female
+    <input type="radio" th:field="*{gender}" value="others"> Others 
+    <br><br>
+
+    City : 
+    <select th:field="*{city}">
+        <option value="pune">Pune</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="delhi">Delhi</option>
+        <option value="kolhapur">Kolhapur</option>
+        <option value="sangli">Sangli</option>
+    </select> 
+    <br><br>
+
+    <input type="submit" value="Update">
+
+</form>
+
+</body>
+</html>

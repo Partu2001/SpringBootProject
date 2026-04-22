@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Student</title>
+</head>
+<body>
+
+<form action="/studentportal/save" method="post">
+Name : <input type="text" placeholder="Enter Name " name="name" required> <br> <br>
+Roll No : <input type="number" placeholder="Enter Roll No" name ="rollno" required> <br> <br>
+Gender : <input type="radio" name="gender" value="male">Male
+ <input type="radio" name="gender" value="female">Female
+ <input type="radio" name="gender" value="Others">Others <br> <br>
+ City : <select name="city">
+ <option value="pune">Pune</option>
+ <option value="mumbai">Mumbai</option>
+ <option value="delhi">Delhi</option>
+ <option value="kolhapur">Kolhapur</option>
+ <option value="sangli">Sangli</option>
+ </select> <br> <br>
+ <input type="submit">
+</form>
+</body>
+</html>
